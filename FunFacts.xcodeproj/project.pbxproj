@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B62161691CD3AE6E00CE7DCD /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62161681CD3AE6E00CE7DCD /* FactModel.swift */; };
 		B6DC169A1CD305AD00104F70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DC16991CD305AD00104F70 /* AppDelegate.swift */; };
 		B6DC169C1CD305AD00104F70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DC169B1CD305AD00104F70 /* ViewController.swift */; };
 		B6DC169F1CD305AD00104F70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DC169D1CD305AD00104F70 /* Main.storyboard */; };
 		B6DC16A11CD305AD00104F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6DC16A01CD305AD00104F70 /* Assets.xcassets */; };
 		B6DC16A41CD305AD00104F70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DC16A21CD305AD00104F70 /* LaunchScreen.storyboard */; };
+		B6E648671CD4F8600054569B /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E648661CD4F8600054569B /* ColorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B62161681CD3AE6E00CE7DCD /* FactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
 		B6DC16961CD305AD00104F70 /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DC16991CD305AD00104F70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6DC169B1CD305AD00104F70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		B6DC16A01CD305AD00104F70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6DC16A31CD305AD00104F70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6DC16A51CD305AD00104F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E648661CD4F8600054569B /* ColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				B6DC16991CD305AD00104F70 /* AppDelegate.swift */,
 				B6DC169B1CD305AD00104F70 /* ViewController.swift */,
+				B62161681CD3AE6E00CE7DCD /* FactModel.swift */,
 				B6DC169D1CD305AD00104F70 /* Main.storyboard */,
 				B6DC16A01CD305AD00104F70 /* Assets.xcassets */,
 				B6DC16A21CD305AD00104F70 /* LaunchScreen.storyboard */,
 				B6DC16A51CD305AD00104F70 /* Info.plist */,
+				B6E648661CD4F8600054569B /* ColorModel.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					B6DC16951CD305AD00104F70 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 566T8PK976;
 					};
 				};
 			};
@@ -135,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62161691CD3AE6E00CE7DCD /* FactModel.swift in Sources */,
 				B6DC169C1CD305AD00104F70 /* ViewController.swift in Sources */,
 				B6DC169A1CD305AD00104F70 /* AppDelegate.swift in Sources */,
+				B6E648671CD4F8600054569B /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +258,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.designwall.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +273,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.designwall.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +303,7 @@
 				B6DC16AA1CD305AD00104F70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
